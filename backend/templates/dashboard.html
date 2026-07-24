@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+
+💧 AquaAI
+
+</div>
+
+<ul>
+
+<li><a href="/">Home</a></li>
+
+<li><a href="/predict">Predict</a></li>
+
+<li><a href="/dashboard">Dashboard</a></li>
+
+<li><a href="/about">About</a></li>
+
+</ul>
+
+</nav>
+
+<div class="dashboard">
+
+<h1>📊 Water Quality Dashboard</h1>
+
+<div class="dashboard-cards">
+
+<div class="dash-card">
+
+<i class="fa-solid fa-database"></i>
+
+<h2>{{ total_samples }}</h2>
+
+<p>Total Water Samples</p>
+
+</div>
+
+<div class="dash-card">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<h2>{{ states }}</h2>
+
+<p>Indian States</p>
+
+</div>
+
+<div class="dash-card">
+
+<i class="fa-solid fa-droplet"></i>
+
+<h2>{{ avg_wqi }}</h2>
+
+<p>Average WQI</p>
+
+</div>
+
+<div class="dash-card">
+
+<i class="fa-solid fa-brain"></i>
+
+<h2>99%</h2>
+
+<p>Random Forest Accuracy</p>
+
+</div>
+
+<div class="dash-card">
+
+<i class="fa-solid fa-microchip"></i>
+
+<h2>98%</h2>
+
+<p>Deep Learning Accuracy</p>
+
+</div>
+
+<div class="dash-card">
+
+<i class="fa-solid fa-shield-heart"></i>
+
+<h2>Excellent</h2>
+
+<p>AI Prediction Status</p>
+
+</div>
+
+</div>
+
+<h2 style="margin-top:60px;">Project Overview</h2>
+
+<div class="overview">
+
+<div class="overview-card">
+
+<h3>🤖 Machine Learning</h3>
+
+<p>
+
+Random Forest predicts water quality using
+important water parameters.
+
+</p>
+
+</div>
+
+<div class="overview-card">
+
+<h3>🧠 Deep Learning</h3>
+
+<p>
+
+Artificial Neural Network compares
+prediction accuracy with ML.
+
+</p>
+
+</div>
+
+<div class="overview-card">
+
+<h3>📈 Dashboard Analytics</h3>
+
+<p>
+
+Displays water statistics,
+quality analysis and prediction summary.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>
+
+© 2026 AI Water Quality Prediction System
+
+</p>
+
+</footer>
+
+</body>
+
+</html>

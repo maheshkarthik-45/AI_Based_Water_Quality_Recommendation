@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Water Quality Prediction</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav>
+
+    <div class="logo">
+        💧 AquaAI
+    </div>
+
+    <ul>
+
+        <li><a href="/">Home</a></li>
+
+        <li><a href="/predict">Predict</a></li>
+
+        <li><a href="/dashboard">Dashboard</a></li>
+
+        <li><a href="/about">About</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- Hero -->
+
+<section class="hero">
+
+    <div class="left">
+
+        <h1>
+            AI Based Water Quality Prediction System
+        </h1>
+
+        <p>
+            Predict water quality using Machine Learning and Deep Learning.
+            Analyze water parameters and receive instant AI-powered predictions.
+        </p>
+
+        <a href="/predict">
+            <button>
+                Predict Now
+            </button>
+        </a>
+
+    </div>
+
+    <div class="right">
+
+        <img src="{{ url_for('static', filename='images/water.png') }}" alt="Water">
+
+    </div>
+
+</section>
+
+<!-- Statistics -->
+
+<section class="stats">
+
+    <div class="card">
+
+        <i class="fa-solid fa-database"></i>
+
+        <h2>{{ total_samples }}</h2>
+
+        <p>Total Samples</p>
+
+    </div>
+
+    <div class="card">
+
+        <i class="fa-solid fa-location-dot"></i>
+
+        <h2>{{ states }}</h2>
+
+        <p>States</p>
+
+    </div>
+
+    <div class="card">
+
+        <i class="fa-solid fa-chart-line"></i>
+
+        <h2>{{ avg_wqi }}</h2>
+
+        <p>Average WQI</p>
+
+    </div>
+
+</section>
+
+<!-- Features -->
+
+<section class="features">
+
+    <h1>Features</h1>
+
+    <div class="feature-box">
+
+        <div class="feature">
+
+            <i class="fa-solid fa-brain"></i>
+
+            <h2>Machine Learning</h2>
+
+            <p>Random Forest predicts water quality with high accuracy.</p>
+
+        </div>
+
+        <div class="feature">
+
+            <i class="fa-solid fa-microchip"></i>
+
+            <h2>Deep Learning</h2>
+
+            <p>Neural Network compares and improves predictions.</p>
+
+        </div>
+
+        <div class="feature">
+
+            <i class="fa-solid fa-chart-column"></i>
+
+            <h2>Dashboard</h2>
+
+            <p>Beautiful analytics with statistics and AI reports.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 AI Water Quality Prediction System
+    </p>
+
+</footer>
+
+</body>
+
+</html>

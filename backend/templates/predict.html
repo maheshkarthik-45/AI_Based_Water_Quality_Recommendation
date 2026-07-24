@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Predict Water Quality</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+
+        💧 AquaAI
+
+    </div>
+
+    <ul>
+
+        <li><a href="/">Home</a></li>
+        <li><a href="/predict">Predict</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/about">About</a></li>
+
+    </ul>
+
+</nav>
+
+<div class="predict-box">
+
+<h1>
+
+💧 Water Quality Prediction
+
+</h1>
+
+<p>
+
+Enter the water quality parameters below.
+
+</p>
+
+<form action="/result" method="POST">
+
+<label>Select State</label>
+
+<select name="state" required>
+
+{% for state in states %}
+
+<option value="{{ state }}">{{ state }}</option>
+
+{% endfor %}
+
+</select>
+
+<input type="number"
+step="0.01"
+name="ph"
+placeholder="pH"
+required>
+
+<input type="number"
+step="0.01"
+name="do"
+placeholder="Dissolved Oxygen"
+required>
+
+<input type="number"
+step="0.01"
+name="bod"
+placeholder="BOD"
+required>
+
+<input type="number"
+step="0.01"
+name="cod"
+placeholder="COD"
+required>
+
+<input type="number"
+step="0.01"
+name="tds"
+placeholder="TDS"
+required>
+
+<input type="number"
+step="0.01"
+name="conductivity"
+placeholder="Conductivity"
+required>
+
+<input type="number"
+step="0.01"
+name="turbidity"
+placeholder="Turbidity"
+required>
+
+<button type="submit">
+
+<i class="fa-solid fa-droplet"></i>
+
+Predict Water Quality
+
+</button>
+
+</form>
+
+</div>
+
+</body>
+
+</html>
