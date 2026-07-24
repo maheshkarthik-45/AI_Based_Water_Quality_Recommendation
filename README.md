@@ -1,46 +1,51 @@
-# AI-Based Water Quality Prediction System
+# 💧 AI-Based Water Quality Prediction System
 
 ## Overview
 
-The AI-Based Water Quality Prediction System is a web application that predicts the quality of water using Artificial Intelligence. The project uses Machine Learning (Random Forest) and Deep Learning (Artificial Neural Network) models to analyze water quality parameters and classify water into different quality categories.
+The **AI-Based Water Quality Prediction System** is an intelligent web application developed using **Machine Learning** and **Deep Learning** techniques to predict water quality based on various physicochemical parameters.
 
-The application is developed using Python, Flask, HTML, CSS, JavaScript, Scikit-learn, TensorFlow, and Keras.
+The system uses a **Random Forest Classifier** and an **Artificial Neural Network (ANN)** to analyze water quality parameters and classify the water quality. A user-friendly web interface built with **Flask** allows users to enter water quality parameters and obtain instant prediction results.
 
 ---
 
 ## Features
 
-- AI-based water quality prediction
-- Machine Learning and Deep Learning models
-- User-friendly web interface
-- Real-time prediction
-- State-wise water quality prediction
-- Dashboard and result visualization
+- AI-based Water Quality Prediction
+- Machine Learning (Random Forest)
+- Deep Learning (Artificial Neural Network)
+- Flask Web Application
+- Responsive User Interface
+- Real-time Prediction
+- Easy-to-use Dashboard
+- State-wise Water Quality Selection
 
 ---
 
 ## Technologies Used
 
-- Python 3.10
-- Flask
-- HTML5
-- CSS3
-- JavaScript
-- TensorFlow
-- Keras
-- Scikit-learn
-- Pandas
-- NumPy
-- Joblib
+| Technology | Purpose |
+|------------|---------|
+| Python | Programming Language |
+| Flask | Backend Framework |
+| HTML5 | Web Page Structure |
+| CSS3 | Styling |
+| JavaScript | Frontend Interactivity |
+| Scikit-learn | Machine Learning |
+| TensorFlow | Deep Learning |
+| Keras | Neural Network Development |
+| Pandas | Data Processing |
+| NumPy | Numerical Computation |
+| Joblib | Model Serialization |
+| Visual Studio Code | Development Environment |
+| Google Colab | Model Training |
 
 ---
 
 ## Dataset
 
-Dataset Used:
-Water Quality India Dataset
+The project uses the **Water Quality India Dataset** in CSV format.
 
-Input Features:
+### Input Parameters
 
 - State
 - pH
@@ -51,119 +56,156 @@ Input Features:
 - Conductivity
 - Turbidity
 
-Output:
+### Output
 
-- Predicted Water Quality
-
----
-
-## Machine Learning Model
-
-Algorithm:
-Random Forest Classifier
-
-Saved Files:
-
-- random_forest_model.pkl
-- scaler.pkl
-- label_encoder.pkl
-
----
-
-## Deep Learning Model
-
-Algorithm:
-Artificial Neural Network (ANN)
-
-Saved File:
-
-- water_quality_nn.keras
+- Predicted Water Quality Category
 
 ---
 
 ## Project Structure
 
-water/
+```text
+AI-Based-Water-Quality-Prediction/
 │
 ├── backend/
 │   ├── app.py
 │   ├── train_ml.py
 │   ├── train_dl.py
+│   ├── requirements.txt
+│   │
 │   ├── dataset/
-│   ├── model/
+│   │   └── water_quality_india.csv
+│   │
+│   ├── models/
+│   │   ├── random_forest_model.pkl
+│   │   ├── water_quality_nn.keras
+│   │   ├── scaler.pkl
+│   │   └── label_encoder.pkl
+│   │
 │   ├── static/
-│   ├── templates/
+│   │   ├── style.css
+│   │   ├── script.js
+│   │   └── images/
+│   │
+│   └── templates/
+│       ├── index.html
+│       ├── predict.html
+│       ├── result.html
+│       ├── dashboard.html
+│       └── about.html
 │
-└── README.md
+├── README.md
+└── LICENSE
+```
 
 ---
 
 ## Installation
 
-Create Virtual Environment
+### Clone the Repository
 
+```bash
+git clone https://github.com/your-username/AI-Based-Water-Quality-Prediction.git
+```
+
+### Navigate to Project Folder
+
+```bash
+cd AI-Based-Water-Quality-Prediction/backend
+```
+
+### Create Virtual Environment
+
+```bash
 python -m venv venv
+```
 
-Activate Virtual Environment
+### Activate Virtual Environment
 
-Windows
+**Windows**
 
+```bash
 venv\Scripts\activate
+```
 
-Install Required Libraries
+**Linux / macOS**
 
-pip install flask pandas numpy scikit-learn tensorflow joblib
+```bash
+source venv/bin/activate
+```
+
+### Install Required Libraries
+
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
-## Train Machine Learning Model
+## Training the Models
 
+### Machine Learning Model
+
+```bash
 python train_ml.py
+```
 
----
+### Deep Learning Model
 
-## Train Deep Learning Model
-
+```bash
 python train_dl.py
+```
 
 ---
 
-## Run the Application
+## Running the Application
 
+```bash
 python app.py
+```
 
-Open the application in your browser:
+Open your browser and visit:
 
+```
 http://127.0.0.1:5000
+```
 
 ---
 
 ## Application Workflow
 
-1. User enters water quality parameters.
-2. Flask receives the input.
-3. Input data is preprocessed.
-4. Random Forest and ANN models perform prediction.
-5. Predicted water quality is displayed to the user.
+1. Load the Water Quality Dataset.
+2. Preprocess the dataset.
+3. Train Random Forest and ANN models.
+4. Save trained models.
+5. Launch the Flask web application.
+6. User enters water quality parameters.
+7. The trained AI model predicts the water quality.
+8. Display the prediction result on the web interface.
+
+---
+
+## Screenshots
+
+- Home Page
+- Prediction Page
+- Prediction Result
+- Dashboard
 
 ---
 
 ## Future Scope
 
-- IoT-based real-time water monitoring
-- Mobile application
+- Real-time monitoring using IoT sensors
 - Cloud deployment
-- Live dashboard
+- Mobile application support
+- Interactive analytics dashboard
 - Improved prediction accuracy using larger datasets
+- Integration with smart water management systems
 
 ---
 
-## Developed By
+## Author
 
-Project Title:
-AI-Based Water Quality Prediction System Using Machine Learning and Deep Learning
-
-Author :
-Mahesh Karthik L
-
----
+**Project Title:** AI-Based Water Quality Prediction System Using Machine Learning and Deep Learning
+**Author:** Mahesh karthik L
