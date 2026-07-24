@@ -208,4 +208,5 @@ http://127.0.0.1:5000
 ## Author
 
 **Project Title:** AI-Based Water Quality Prediction System Using Machine Learning and Deep Learning
+
 **Author:** Mahesh karthik L
